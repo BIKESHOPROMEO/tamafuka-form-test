@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>予約不可登録</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="loading" class="loading-overlay">
+  <div class="spinner"></div>
+  <div class="loading-text">登録中です...</div>
+</div>
+    <h2>予約不可 登録フォーム</h2>
+
+    <div class="form-row">
+      <label for="date">日付:</label>
+      <input type="date" id="date" />
+    </div>
+
+    <div class="form-row">
+      <label for="start">開始時間:</label>
+      <select id="start">
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+      </select>
+
+      <label for="end">終了時間:</label>
+      <select id="end">
+        <option value="10:00">11:00</option>
+        <option value="11:00">12:00</option>
+        <option value="12:00">13:00</option>
+        <option value="13:00">14:00</option>
+        <option value="14:00">15:00</option>
+        <option value="15:00">16:00</option>
+        <option value="16:00">17:00</option>
+        <option value="17:00">18:00</option>
+        <option value="18:00">19:00</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label for="reason">理由（任意）:</label>
+      <input type="text" id="reason" placeholder="臨時休業など" />
+    </div>
+
+    <button onclick="submitUnavailable()">登録する</button>
+
+    <div id="result" class="result-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
