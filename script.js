@@ -30,7 +30,7 @@ function hideLoading() {
   showLoading(); // ← クルクル開始！
 
   const payload = {
-    action: "unavailable", // ← これがGASの分岐キー！
+    action: "unavailabletest", // ← これがGASの分岐キー！
     date,
     start,
     end,
